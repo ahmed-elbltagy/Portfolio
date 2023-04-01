@@ -78,10 +78,18 @@
 
 
 let mybutton = document.querySelector( ".btn" );
-window.onscroll = function(){
-  if(window.scrollY >= 1500){ mybutton.style.display="flex"}
-  else{mybutton.style.display="none"}
-}
+window.onscroll = function ()
+{
+  if ( window.scrollY >= 600 )
+  {
+    mybutton.style.display="flex";
+    
+  }
+  else
+  {
+    mybutton.style.display = "none";
+  }
+};
 mybutton.onclick= function(){
   window.scrollTo({
     top:0
