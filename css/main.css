@@ -7,7 +7,7 @@
   caret-color: var(--main-color);
 }
 body{
-  font-family: 'Cairo', sans-serif;
+  font-family: 'Cairo', sans-serif;;
 }
 html{
   scroll-behavior: smooth;
@@ -16,16 +16,13 @@ a {
   text-decoration: none;
 }
 .btn{
-  display:none;
-  z-index:200;
   justify-content: center;
   align-items: center;
   position:fixed;
-  bottom:1%;
   right: 1%;
   width: 30px;
   height:30px;
-  padding: 8px;
+  padding-bottom: 1px;
   border: 1.7px solid var(--main-color);
   background-color: #fff;
   color: var(--main-color);
@@ -33,6 +30,9 @@ a {
   border-radius: 10%;
   box-shadow:1px 1px 4px #99999935 , -1px -1px 4px #99999935;
   cursor: pointer;
+  transition: .3s;
+  bottom: 20px;
+  z-index:200px;
 }
 .btn:hover i{
   animation: updown .3s linear infinite alternate;

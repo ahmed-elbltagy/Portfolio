@@ -78,21 +78,19 @@
 
 
 let mybutton = document.querySelector( ".btn" );
-window.onscroll = function ()
-{
+window.onscroll = function(){
   if ( window.scrollY >= 600 )
   {
-    mybutton.style.display="flex";
-    
+    mybutton.style.opacity = "1";
   }
+  
   else
   {
-    mybutton.style.display = "none";
+    mybutton.style.opacity = "0";
   }
-};
+}
 mybutton.onclick= function(){
   window.scrollTo({
     top:0
   })
 }
-
