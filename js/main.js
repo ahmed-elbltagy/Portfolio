@@ -76,17 +76,18 @@
 //   }, 2000 / goal);
 // }
 
-
 let mybutton = document.querySelector( ".btn" );
 window.onscroll = function(){
-  if ( window.scrollY >= 600 )
+  if ( window.scrollY >= 650 )
   {
     mybutton.style.opacity = "1";
+    mybutton.style.pointerEvents = "auto";
+    mybutton.style.cursor="pointer";
   }
-  
   else
   {
     mybutton.style.opacity = "0";
+    mybutton.style.pointerEvents = "none";
   }
 }
 mybutton.onclick= function(){
