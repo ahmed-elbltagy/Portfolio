@@ -33,10 +33,6 @@ a {
   border-radius: 10%;
   box-shadow:1px 1px 4px #99999935 , -1px -1px 4px #99999935;
   cursor: pointer;
-  -webkit-transition: 3s;
-  -moz-transition: 3s;
-  -ms-transition: 3s;
-  -o-transition: 3s;
 }
 .btn:hover i{
   animation: updown .3s linear infinite alternate;
