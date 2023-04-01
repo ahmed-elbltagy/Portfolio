@@ -78,24 +78,13 @@
 
 
 let mybutton = document.querySelector( ".btn" );
-// window.onscroll = function(){
-//   if(window.scrollY >= 1500){ mybutton.style.display="flex"}
-//   else{mybutton.style.display="none"}
-// }
-// mybutton.onclick= function(){
-//   window.scrollTo({
-//     top:0
-//   })
-// }
-
-function scrollFunction() {
-  if (document.body.scrollTop >= 800 || document.documentElement.scrollTop >800) {
-    mybutton.style.display = "flex";
-  } else {
-    mybutton.style.display = "none";
-  }
+window.onscroll = function(){
+  if(window.scrollY >= 1500){ mybutton.style.display="flex"}
+  else{mybutton.style.display="none"}
 }
-mybutton.addEventListener("click", function () {
-  document.body.scrollTop = 0;
-  document.documentElement.scrollTop = 0;
-});
+mybutton.onclick= function(){
+  window.scrollTo({
+    top:0
+  })
+}
+
