@@ -77,13 +77,19 @@
 // }
 
 
-let mybutton = document.querySelector(".button-show");
-mybutton.style.display = "none";
-window.onscroll = function () {
-  scrollFunction();
-};
+let mybutton = document.querySelector( ".btn" );
+// window.onscroll = function(){
+//   if(window.scrollY >= 1500){ mybutton.style.display="flex"}
+//   else{mybutton.style.display="none"}
+// }
+// mybutton.onclick= function(){
+//   window.scrollTo({
+//     top:0
+//   })
+// }
+
 function scrollFunction() {
-  if (document.body.scrollTop > 800 || document.documentElement.scrollTop >800) {
+  if (document.body.scrollTop >= 800 || document.documentElement.scrollTop >800) {
     mybutton.style.display = "flex";
   } else {
     mybutton.style.display = "none";
@@ -93,19 +99,3 @@ mybutton.addEventListener("click", function () {
   document.body.scrollTop = 0;
   document.documentElement.scrollTop = 0;
 });
-
-
-// let mybutton = document.querySelector(".button-show");
-// window.onscroll = function () {
-//   scrollFunction();
-// };
-// function scrollFunction() {
-//   if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
-//     mybutton.style.cssText="display:flex";
-//   }else if(document.body.scrollTop < 120 || document.documentElement.scrollTop < 120){
-//     mybutton.style.cssText="display:none";
-//   } else
-//   {
-//     mybutton.style.cssText="display:none";
-//   }
-// }
