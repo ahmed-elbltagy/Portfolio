@@ -17,8 +17,8 @@ a {
 }
 .btn {
   position: fixed;
-  width: 40px;
-  height: 40px;
+  width: 37px;
+  height: 37px;
   padding-bottom: 1px;
   border: 2px solid var(--main-color);
   background-color: #eee;
@@ -27,7 +27,7 @@ a {
   box-shadow: 1px 1px 4px #99999935, -1px -1px 4px #99999935;
   transition: .5s;
   bottom: 20px;
-  right: 15px;
+  right: 10px;
   z-index: 100px;
   opacity: 0;
 }
