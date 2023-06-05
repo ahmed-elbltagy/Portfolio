@@ -15,27 +15,6 @@ html{
 a {
   text-decoration: none;
 }
-/* .btn{
-  justify-content: center;
-  align-items: center;
-  position:fixed;
-  right: 1%;
-  width: 30px;
-  height:30px;
-  padding-bottom: 1px;
-  border: 1.7px solid var(--main-color);
-  background-color: #fff;
-  color: var(--main-color);
-  font-size: 15px;
-  border-radius: 10%;
-  box-shadow:1px 1px 4px #99999935 , -1px -1px 4px #99999935;
-  cursor: pointer;
-  transition: .4s;
-  bottom: -130px;
-  bottom: 20px;
-  opacity: 0;
-  z-index:100px;
-} */
 .btn {
   position: fixed;
   width: 30px;
@@ -79,7 +58,6 @@ a {
   width:fit-content;
   border:2px solid #000;
   margin: 0 auto 80px;
-  z-index: 1;
   position: relative;
   cursor: pointer;
   transition:var(--main-transition);
@@ -101,6 +79,7 @@ a {
   border-radius: 50%;
   top: 50%;
   transform: translateY(-50%);
+  z-index: -10000000;
 }
 .s-h::before{
   left:-30px;
@@ -814,7 +793,7 @@ header .container nav .other .links i{
   display: flex;
   align-items: center;
   position: relative;
-  z-index: 2;
+  z-index: 1;
 }
 .team .container .box .img img{
   object-fit: cover;
@@ -836,10 +815,10 @@ header .container nav .other .links i{
   margin-left:-50px;
   width: 50px;
   margin-right: 10px;
+  cursor: pointer;
 }
 .team .container .box .img .icons a{
   color: var(--tex-color);
-  z-index: 1;
   transition: var(--main-transition);
   font-size: 16px;
 }
@@ -1114,8 +1093,9 @@ header .container nav .other .links i{
   left: 5px;
 }
 @media (max-width: 767px){
-.dots-down{
-    margin-top:600px;
+.dots-down,
+.dots-up{
+    display: none;
   }
 }
 .events .container{
@@ -1203,7 +1183,6 @@ header .container nav .other .links i{
   padding: 21px;
   border-radius: 50px;
   flex: 1.5;
-  z-index: 1;
 }
 @media (max-width: 767px) {
   .events  form input[type="email"] {
@@ -1225,7 +1204,6 @@ header .container nav .other .links i{
   height: 50px;
   font-size: 14px;
   cursor: pointer;
-  z-index: 1;
   margin-top: 5px;
 }
 @media (max-width: 767px) {
@@ -1253,7 +1231,6 @@ header .container nav .other .links i{
 .pricing .container .col{
   background-color: #fff;
   box-shadow: var(--main-shadow);
-  z-index: 1;
   position: relative;
 }
 .pricing .container .col::before,
@@ -1555,7 +1532,6 @@ header .container nav .other .links i{
   top: 0;
   margin-left: -149px;
   background-color: #1785dee2;
-  z-index: 1;
 }
 .discount .data h3{
   position: relative;
