@@ -33,10 +33,6 @@
 //   }
 // }, 1000);
 
-/*
- ** Animate Width On Scrolling
- ** Video URL: https://youtu.be/sbIoIKI9FOc
- */
 
 /*
  ** Increase Numbers On Scrolling
@@ -51,7 +47,7 @@
 // let started = false; // Function Started ? No
 
 // window.onscroll = function () {
-  // Skills Animate Width
+
   // if (window.scrollY >= section.offsetTop - 250) {
   //   progressSpans.forEach((span) => {
   //     span.style.width = span.dataset.width;
@@ -76,6 +72,7 @@
 //   }, 2000 / goal);
 // }
 
+  // Skills Animate Width
 let section = document.querySelector("#skills");
 let progressSpan = document.querySelectorAll(".prog span");
 window.addEventListener("scroll", function() {
@@ -86,7 +83,7 @@ window.addEventListener("scroll", function() {
   }
 });
 
-/////////////////////////////
+// scroll to Top button
 let mybutton = document.querySelector( ".btn" );
 window.onscroll = function(){
   if ( window.scrollY >= 650 )
