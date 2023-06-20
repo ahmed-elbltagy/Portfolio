@@ -76,6 +76,17 @@
 //   }, 2000 / goal);
 // }
 
+let section = document.querySelector("#skills");
+let progressSpan = document.querySelectorAll(".prog span");
+window.addEventListener("scroll", function() {
+  if (window.scrollY >= section.offsetTop -10) {
+    progressSpan.forEach( ( span ) =>{
+      span.style.width = span.dataset.width
+  })
+  }
+});
+
+/////////////////////////////
 let mybutton = document.querySelector( ".btn" );
 window.onscroll = function(){
   if ( window.scrollY >= 650 )
