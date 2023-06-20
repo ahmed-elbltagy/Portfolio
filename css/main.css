@@ -10,7 +10,7 @@ body{
   font-family: 'Cairo', sans-serif;;
 }
 html{
-  scroll-behavior: smooth;
+  scroll-behavior: smooth !important;
 }
 a {
   text-decoration: none;
@@ -944,7 +944,7 @@ header .container nav .other .links i{
   grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
   grid-gap: 150px;
 }
-.skills .line{
+.skills .progress{
   width: 125%;
   margin-left: -130px;
 }
@@ -968,9 +968,10 @@ header .container nav .other .links i{
   background-color: var(--main-color);
   height: 100%;
   position: relative;
+  transition: .7s;
 }
-.skills .line .prog-holder .prog span::before{
-  content: attr(data-progress);
+.skills .progress .prog-holder .prog span::before{
+  content: attr(data-width);
   position: absolute;
   border: 1px solid var(--second-color);
   color: var(--main-color);
@@ -982,7 +983,7 @@ header .container nav .other .links i{
   border-radius: 4px;
 }
 @media (max-width:991px){
-  .skills .line{
+  .skills .progress{
     width: 100%;
     margin-left: 0px;
   }
