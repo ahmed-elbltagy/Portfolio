@@ -63,6 +63,7 @@ a {
   position: relative;
   cursor: pointer;
   transition:var(--main-transition);
+  z-index: 1;
 }
 .s-h:hover{
   transition-delay:.5s;
@@ -81,7 +82,6 @@ a {
   border-radius: 50%;
   top: 50%;
   transform: translateY(-50%);
-  z-index: -10000000;
 }
 .s-h::before{
   left:-30px;
