@@ -1,7 +1,7 @@
 
 
 let counter =setInterval( function () { 
-  let date1 = new Date("2021-03-23, 23:59:59");
+  let date1 = new Date("2021-05-01 23:00:00");
   let date2 = new Date();
   let dateDiff = date2 - date1;
   let years = Math.floor(dateDiff / (1000 * 60 * 60 * 24 * 365.25));
