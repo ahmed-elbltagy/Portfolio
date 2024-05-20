@@ -13,7 +13,7 @@ html{
   scroll-behavior: smooth !important;
 }
 .bg{
-  background-color:#c6dbd655
+  background-color:#c6dbd625
 }
 a {
   text-decoration: none;
@@ -141,7 +141,7 @@ ul{
 }
 :root{
 --main-color: #0B78D0;
---second-color:#0b77d039  ;
+--second-color:#0b77d015  ;
 --tex-color:#504f4f  ;
 --main-padding:100px ;
 --main-transition:.3s;
@@ -239,7 +239,7 @@ header .container nav li > a:hover::before{
 }
 header .container nav li > a:hover{
   color: var(--main-color);
-  background-color: #f3f3f3bc;
+  background-color: #c6dbd625;
 }
 header .container nav .other {
   padding: 30px;
@@ -770,7 +770,7 @@ header .container nav .other .links i{
 }
 .team .container .box{
   position: relative;
-  background-color: #fff;
+  background-color: #0b77d015;
   border-radius: 10px;
   margin-left: 60px;
 }
@@ -1012,7 +1012,7 @@ header .container nav .other .links i{
   align-items: center;
   gap: 30px;
   padding: 25px;
-  background-color: #f6f5f5;
+  background-color: #c6dbd625;
   margin-bottom: 20px;
   border: 2px solid white;
   border-radius: 6px;
@@ -1127,6 +1127,7 @@ header .container nav .other .links i{
   text-align: center;
   padding: 15px 0;
   box-shadow: var(--main-shadow);
+  background-color: #0b77d015;
 }
 .events .container .content .time p:nth-child(1){
   font-weight: bold;
@@ -1160,7 +1161,7 @@ header .container nav .other .links i{
 .events form{
   padding:30px 40px ;
   margin: 60px auto 20px;
-  background-color:#f6f5f5 ;
+  background-color: #0b77d015;
   border-radius: 50px;
   display: flex;
   flex-wrap: wrap;
@@ -1180,6 +1181,7 @@ header .container nav .other .links i{
   padding: 21px;
   border-radius: 50px;
   flex: 1.5;
+  /* background-color: #0b77d015; */
 }
 @media (max-width: 767px) {
   .events  form input[type="email"] {
@@ -1236,7 +1238,7 @@ header .container nav .other .links i{
   position: absolute;
   width: 0%;
   height: 50%;
-  background-color: #d0cfcf34;
+  background-color: #c6dbd625;
   transition: var(--main-transition);
 }
 .pricing .container .col::after{
@@ -1576,9 +1578,8 @@ header .container nav .other .links i{
   padding:14px;
   border: none;
   outline: none;
-  background-color:#f9f9f9;  
+  background-color: #0b77d015;
   resize: none;
-  border-bottom: 1px solid var(--second-color);
   border-radius: 20px;
 }
 .discount form input[type="submit"],
