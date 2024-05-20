@@ -12,6 +12,9 @@ body{
 html{
   scroll-behavior: smooth !important;
 }
+.bg{
+  background-color:#c6dbd6be
+}
 a {
   text-decoration: none;
 }
@@ -138,7 +141,7 @@ ul{
 }
 :root{
 --main-color: #0B78D0;
---second-color:#e5e5e5  ;
+--second-color:#0b77d039  ;
 --tex-color:#504f4f  ;
 --main-padding:100px ;
 --main-transition:.3s;
@@ -172,9 +175,6 @@ ul{
 header{
   background-color: white;
   position: relative;
-  -webkit-box-shadow: 0 0 10px #ddd;
-  -moz-box-shadow: 0 0 10px #ddd;
-  box-shadow:var(--main-shadow);
 }
 header .container{
   display: flex;
