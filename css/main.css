@@ -13,7 +13,7 @@ html{
   scroll-behavior: smooth !important;
 }
 .bg{
-  background-color:#c6dbd6be
+  background-color:#c6dbd655
 }
 a {
   text-decoration: none;
@@ -475,6 +475,7 @@ header .container nav .other .links i{
   box-shadow:var(--main-shadow);
   border-radius: 5px;
   transition: var(--main-transition);
+  background-color: #fff;
 }
 .articles .container .box:hover{
   transform: translateY(-10px);
@@ -595,7 +596,6 @@ header .container nav .other .links i{
     grid-gap: 40px;
   }
   .features .container .box{
-    border: 1.3px solid var(--second-color);
     overflow: hidden;
     box-shadow:var(--main-shadow);
   }
@@ -624,6 +624,7 @@ header .container nav .other .links i{
   .features .container .box .text{
     padding: 0px 20px 45px;
     text-align: center;
+    background-color: #fff;
   }
   .features .container .box .text h3{
     font-size: 40px;
@@ -648,7 +649,7 @@ header .container nav .other .links i{
     background-color: #009688 ;
   }
   .features .container .box:nth-child(3) h3::before{
-    background-color:var(--main-color) ;
+    background-color: #0B78D0;
   }
   .features .container .box .img::after{
   content: "";
@@ -681,7 +682,7 @@ header .container nav .other .links i{
     transition: var(--main-transition);
 }
 .features .container .box:hover .text a{
-  color: white;
+  color: var(--tex-color);
 }
 .features .container .box .text a::before{
   content: "";
@@ -691,21 +692,17 @@ header .container nav .other .links i{
   top: 0;
   left: 0;
   transition: var(--main-transition);
-  z-index: -1;
-}
-.features .container .box:hover a::before{
-  width:100%;
 }
 .features .container .box:hover:nth-child(1) a::before{
-  background-color:#f44036 ;
+  background-color:hsla(3, 90%, 58%, 0.25) ;
   width:100%;
 }
 .features .container .box:hover:nth-child(2) a::before{
-  background-color:#009688 ;
+  background-color:hsl(174, 100%, 29%, 0.25) ;
   width:100%;
 }
 .features .container .box:hover:nth-child(3) a::before{
-  background-color:var(--main-color);
+  background-color:hsl(207, 90%, 43%, 0.25);
   width:100%;
 }
 .features .container .box:nth-child(1) a{
@@ -773,7 +770,7 @@ header .container nav .other .links i{
 }
 .team .container .box{
   position: relative;
-  background-color: #f3f3f3;
+  background-color: #fff;
   border-radius: 10px;
   margin-left: 60px;
 }
@@ -862,7 +859,6 @@ header .container nav .other .links i{
   }
   .services .container .box{
     background-color: #fff;
-    box-shadow: var(--main-shadow);
     position: relative;
     transition: var(--main-transition);
     counter-increment: services;
